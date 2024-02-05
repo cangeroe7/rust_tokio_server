@@ -1,0 +1,189 @@
+body {
+  font-size: 16px;
+  background-color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  font-family: Oxygen, sans-serif;
+  margin: 0;
+  background-color: lightgray;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 1.5em;
+}
+
+.topnav {
+  background-color: #333;
+  overflow: hidden;
+  display: flex;
+  width: 100%;
+  flex-flow: wrap;
+}
+
+.topnav button {
+  background-color: #333;
+  color: whitesmoke;
+  padding: 30px 30px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 125%;
+  border: none;
+  margin: 0 auto;
+  font-weight: 500;
+}
+
+.topnav button:hover {
+  background-color: #555;
+  cursor: pointer;
+
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#calculation-hold {
+  text-align: center;
+  display: none;
+}
+
+#grid-container {
+  display: grid;
+  gap: 1em 1em;
+  grid-auto-rows: 5fr 1fr;
+  grid-auto-columns: 7fr 2fr;
+  height: 30vw;
+  width: 60vw;
+
+}
+
+.grid-item {
+  padding: 5px;
+  border: solid 1px #333;
+  border-radius: 5px;
+  background-color: whitesmoke;
+}
+
+#grid-calculator {
+  grid-row: 1 ;
+  grid-column: 1;
+  display: inline-block;
+}
+
+table {
+  display: table;
+  border-collapse: separate;
+  box-sizing: border-box;
+  text-indent: initial;
+  text-align: left;
+  border: 0;
+  table-layout: fixed;
+  margin: 0;
+  width: 100%;
+}
+
+td {
+  width: 100%;
+  padding: 5px 10px;
+}
+
+.td-item {
+  font-size: 1.5em;
+}
+
+.value-box {
+  width: 98%;
+}
+
+.select-option {
+  width: 100%;
+}
+
+option {
+  padding: 2px;
+  font-size: 0.8em;
+}
+
+option:hover {
+  background-color: lightgray;
+}
+
+#grid-calculator-result {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+#grid-links {
+  grid-row: 1 / 3;
+  grid-column: 2 ;
+}
+
+#history {
+  text-align: left;
+  padding-left: 19.5vw;
+  padding-right: 33vw;
+}
+
+@media only screen and (min-width: 1450px) {
+  #grid-container {
+    height: 25vw;
+  }
+}
+
+@media only screen and (max-width: 1250px) {
+  #grid-container {
+    width: 70vw;
+    height: 40vw;
+  }
+  #history {
+    padding-left: 14.5vw;
+    padding-right: 30vw;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #grid-container {
+    width: 80vw;
+    height: 47vw;
+  }
+  #history {
+    padding-left: 9.5vw;
+    padding-right: 27.5vw;
+  }
+}
+
+@media only screen and (max-width: 800px) {
+  #grid-container {
+    width: 85vw;
+    height: 55vw;
+  }
+  #history {
+    padding: 0 6.8vw;
+  }
+  #grid-links {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 700px) {
+  #grid-container {
+    width: 90vw;
+    height: 62vw;
+  }
+  #history {
+    padding: 4.1vw;
+  }
+}
+
+@media only screen and (max-width: 600px) {
+  #grid-container {
+    width: 90vw;
+    height: 74vw;
+  }
+}

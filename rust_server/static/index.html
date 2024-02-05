@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversion Machine</title>
+    <link rel="stylesheet" href="./styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="topnav">
+            <!-- LOGO   LENGTH   TEMPERATURE   AREA   VOLUME   WEIGHT -->
+            <button class="measure-button" id="home">HOME</button>
+            <button class="measure-button" id="length">LENGTH</button>
+            <button class="measure-button" id="weight">WEIGHT</button>
+            <button class="measure-button" id="temperature">TEMPERATURE</button>
+            <button class="measure-button" id="area">AREA</button>
+            <button class="measure-button" id="volume">VOLUME</button>
+        </nav>
+    </header>
+    <main>
+        <div id="calculation-hold">
+            <h2 id="calculator-name"></h2>
+            <section id="grid-container">
+                <article class="grid-item" id="grid-calculator">
+                    <!-- this table will be the calculator, the aaaaaaa is a hold to visualize what 
+                    it will look like with real inputs added with javascript -->
+                    <table>
+                        <tbody>
+                            <tr>
+                                <td>From: </td>
+                                <td>To: </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <input class="value-box td-item" type="text" name="from-val" id="from-val">
+                                </td>
+                                <td>
+                                    <input class="value-box td-item" type="text" name="to-val" id="to-val">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <select class="select-option td-item" size="7" name="input-unit" id="input-unit">
+                                    </select>
+                    
+                                </td>
+                                <td>
+                                    <select class="select-option td-item" size="7" name="output-unit" id="output-unit">
+                                    </select>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </article>
+                <article class="grid-item" id="grid-calculator-result">
+                    
+                </article>
+                
+                <aside class="grid-item" id="grid-links">
+                    aside links
+                </aside>
+            </section>
+        </div>
+        <article id="history">
+            <h1 id="history-title"></h1>
+            <p id="history-text"></p>
+        </article>
+    </main>
+    <footer>
+
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html> 
